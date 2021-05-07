@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktai</title>
+</head>
+<body>
+    <section id="formms">
+        <h1> Prekiu uzsakymas</h1>
+        <h2> Prisijungimo duomenys</h2>
+        <form action="" method="">
+            <!-- 
+                action tai kur siusim, method kaip saugiai ar ne
+            -->
+            <div>
+                <label> Vardas</label>
+                  <input type="text" placeholder="Name"/>
+            </div>
+            <div>
+                <label>Pavarde</label>
+                <input type="text"/>
+            </div>
+            <div>
+                <label>Telefonas</label>
+                <input type="phone" value="+370"/>
+            </div>
+            <div>
+                <label> El. pastas *</label>
+                <input type="email" required />
+
+            </div>
+           
+            <h2>Pieno produktai</h2>
+            <!--galima pasirinkti kelis variantaus-->
+            <div class="form-example">
+                <div class="form-example_checkbox">
+                    <label for="checkbox1">Pienas  </label>
+                    <input type="checkbox" id="checkbox1" name="checkbox" value="1" />
+                </div>
+                <div class="form-example_checkbox">
+                    <label  for="checkbox2">Grietine  </labe2>
+                    <input type="checkbox" id="checkbox2" name="checkbox" value="2" />
+                </div>
+                <div class="form-example_checkbox">
+                    <label  for="checkbox3">Varske  </labe3>
+                    <input type="checkbox" id="checkbox3" name="checkbox" value="3" />
+                </div>
+                <div class="form-example_checkbox">
+                    <label  for="checkbox3">Suris </labe3>
+                    <input type="checkbox" id="checkbox3" name="checkbox" value="4" />
+                </div>
+                <div class="form-example_checkbox">
+                    <label  for="checkbox3">Sviestas </labe3>
+                    <input type="checkbox" id="checkbox3" name="checkbox" value="5" />
+                </div>
+            </div>
+            <!-- NERANDU KLAIDOS KODEL OPTION NEPATALPINA I LENTELE-->
+            <h2> Kiausiniai</h2>
+            <div class="from-exemple_selected">
+                <div>
+                    <label for="select">Putpeliu kiausiniai</label>
+                    <select name="select" id="select"></select>
+                    <option value="1"> 12 kiausiniu</option>
+                    <option value="2"> 18 kiausiniu</option>
+                </div>
+                <div>
+                    <label for="select">Vistu kiausiniai</label>
+                    <select name="select1" id="select1"></select>
+                    <option value="1"> 6 kiausiniu</option>
+                    <option value="2"> 10 kiausiniu</option>
+                    <option value="3"> 30 kiausiniu</option>
+                </div>
+            </div>
+            <h2>Pristatymas</h2>
+            <!--
+                kai galoma pasirinkti tik viena varianta
+                name atributas isskiria grupes kiekviena galima pasirinkti atskirai
+            -->
+            <div class="form-example">
+                <div class="form-example_checkbox">
+                    <label for="radio1">Paimsit is parduotuves </label>
+                    <input type="radio" id="radio1" name="radio_group" checked required value="1" />
+                </div>
+                <div class="form-example_checkbox">
+                    <label  for="radio2">Pristatymas i namus </labe2>
+                    <input type="radio" id="radio2" name="radio_group" required value="2" />
+                </div>
+                <div class="form-example_checkbox">
+                    <label  for="radio3">Sestadieni paimsit turgelyje </labe3>
+                    <input type="radio" id="radio3" name="radio_group" required value="3" />
+                </div>
+            </div>
+            <!-- selekt, kai atveria stulpelyje pasirinkimus-->
+            <div>
+                <input type="submit" />
+            </div>
+            
+
+        </form>
+    </section>
+    
+</body>
+</html>
